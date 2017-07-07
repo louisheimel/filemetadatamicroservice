@@ -14,4 +14,4 @@ app.post('/filesubmit', upload.single('attachment'),  function(req, res) {
   res.json(req.file.size);
 });
 
-app.listen(8080);
+app.listen(process.env.PORT || 8080);
